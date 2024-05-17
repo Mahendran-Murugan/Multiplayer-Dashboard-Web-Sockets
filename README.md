@@ -1,6 +1,6 @@
-# Multiplayer Dashboard App
+# Multiplayer Dashboard Using WebScokets
 
-Welcome to the Multiplayer Dashboard App repository! This project is a real-time multiplayer dashboard developed using WebSockets technology. It allows users to add players and display their information on a table, with data updated in real-time.
+Welcome to the Multiplayer Dashboard Using WebScokets repository! This project is a real-time multiplayer dashboard developed using WebSockets technology. It allows users to add players and display their information on a table, with data updated in real-time.
 
 ## Features
 
