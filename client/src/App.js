@@ -13,6 +13,7 @@ function App() {
 
   const handlePlayerDetails = (playerDetails) => {
     setServerData(playerDetails);
+    console.log(playerDetails);
   }
 
   useEffect(() => {
@@ -44,10 +45,11 @@ function App() {
         <Input name="score" placeholder={"Enter your Score"} handleInput={handleInput} />
         <button className="bg-primary text-background px-4 py-2 rounded-lg" type='submit'>Publish Score</button>
       </form>
-      <h2 className='text-2xl font-semibold my-6 text-background'>Player Details Table</h2>
-      <div className='rounded-md shadow overflow-hidden'>
-        {
-          serverData && <table className='w-96 bg-background'>
+      {serverData.length !== 0 && <h2 className='text-3xl font-semibold my-6 text-background'>Player Details Table</h2>}
+      {
+        serverData.length !== 0 && <div className='flex flex-col items-center justify-center rounded-md shadow overflow-hidden'>
+          <table className='w-96 bg-background'>
+
             <thead className='bg-background border-b-2 border-gray-50'>
               <tr>
                 <th className='w-8 text-sm font-semibold tracking-wider p-3 text-left text-black'>No.</th>
@@ -65,9 +67,9 @@ function App() {
               })}
             </tbody>
           </table>
-        }
-      </div>
-    </div>
+        </div>
+      }
+    </div >
   );
 }
 
