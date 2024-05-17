@@ -14,7 +14,7 @@ Welcome to the Multiplayer Dashboard Using WebScokets repository! This project i
 
 To set up and run the Multiplayer Dashboard App on your local machine, follow these steps:
 
-1. Clone this repository: `git clone https://github.com/YourUsername/Multiplayer-Dashboard-App.git`
+1. Clone this repository
 2. Navigate to the project directory: `cd Multiplayer-Dashboard-App`
 
 ### Backend Setup
