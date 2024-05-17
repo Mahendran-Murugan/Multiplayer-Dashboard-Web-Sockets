@@ -10,10 +10,7 @@ const httpServer = createServer();
 
 const socketServer = new Server(httpServer, {
     cors: {
-        origin: [
-            "http://127.0.0.1:5000",
-            "http://127.0.0.1:7000"
-        ]
+        origin: "http://127.0.0.1:3000",
     }
 });
 
