@@ -10,12 +10,20 @@ const httpServer = createServer();
 
 const socketServer = new Server(httpServer, {
     cors: {
-        origin: "http://127.0.0.1:3000",
+        origin: true,
     }
 });
 
+let playerDetails = []
+
 socketServer.on('connection', (socket) => {
-    console.log(socket);
+    socket.on('details', (details) => {
+        playerDetails.push({ ...details, id: socket.id });
+        console.log(playerDetails);
+    })
+    setInterval(() => {
+        socket.emit('playerDetails', playerDetails);
+    }, 5000);
 })
 
 httpServer.listen(PORT, () => {
