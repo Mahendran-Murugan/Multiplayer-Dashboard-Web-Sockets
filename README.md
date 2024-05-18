@@ -2,6 +2,8 @@
 
 Welcome to the Multiplayer Dashboard Using WebScokets repository! This project is a real-time multiplayer dashboard developed using WebSockets technology. It allows users to add players and display their information on a table, with data updated in real-time.
 
+Website Live on : `https://websocketmultiplayerdashboard.netlify.app`
+
 ## Features
 
 - **Real-Time Updates:** The dashboard updates in real-time as player information is added or modified.
