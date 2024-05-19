@@ -3,7 +3,7 @@ import io from 'socket.io-client'
 import { Input } from './components/Input';
 
 function App() {
-  const socket = io('localhost:5000');
+  const socket = io('https://test-socket-server-render.onrender.com');
   const [details, setDetails] = useState({});
   const [serverData, setServerData] = useState([]);
 
